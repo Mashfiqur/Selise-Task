@@ -60,7 +60,7 @@ class OrderController extends Controller
             if($cartItems){
                 $data = [];
                 $orderId = Order::insertGetId([
-                    'orderID' => time().-uniqid(true),
+                    'orderID' => time(). '-' .uniqid(true),
                     'user_id' => $user->id,
                     'status'  => 'Pending'
                 ]);

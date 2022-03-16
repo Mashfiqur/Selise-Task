@@ -25,7 +25,7 @@
                     <tbody>
                         @forelse($user->orders as $order)
                             <tr>
-                                <td>{{ $order->hash_id }}</td>
+                                <td>{{ $order->orderID }}</td>
                                 <td>
                                     <table class="table">
                                         <thead>
